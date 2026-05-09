@@ -12,7 +12,7 @@
     "db:generate": "zen db generate"
   },
   "dependencies": {
-    "@zenbujs/core": "link:/Users/robby/.zenbu/plugins/zenbu/packages/core",
+    "@zenbujs/core": "^0.0.1",
     "@vitejs/plugin-react": "^5.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -41,5 +41,6 @@
       "electron-winstaller",
       "esbuild"
     ]
-  }
+  },
+  "version": "0.0.2"
 }
