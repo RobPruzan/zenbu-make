@@ -26,6 +26,7 @@ function Home() {
       }}
     >
       <h1>Welcome to Zenbu Make</h1>
+      updated!
     </main>
   );
 }
