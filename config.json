@@ -1,0 +1,6 @@
+{
+  "db": "./.zenbu/db",
+  "plugins": [
+    "zenbu.plugin.json"
+  ]
+}
