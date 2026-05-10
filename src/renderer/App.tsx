@@ -1,3 +1,6 @@
+import { ZenbuProvider } from "@zenbujs/core/react";
+import { UpdateStatus } from "./UpdateStatus";
+
 function Titlebar() {
   return (
     <div
@@ -26,18 +29,20 @@ function Home() {
       }}
     >
       <h1>Welcome to Zenbu Make</h1>
-      updated!
     </main>
   );
 }
 
 export function App() {
   return (
-    <div
-      style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
-    >
-      <Titlebar />
-      <Home />
-    </div>
+    <ZenbuProvider>
+      <div
+        style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
+      >
+        <Titlebar />
+        <Home />
+        <UpdateStatus />
+      </div>
+    </ZenbuProvider>
   );
 }

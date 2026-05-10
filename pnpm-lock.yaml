@@ -12,8 +12,8 @@ importers:
         specifier: ^5.0.0
         version: 5.2.0(vite@6.4.2(@types/node@22.19.18)(jiti@2.7.0)(tsx@4.21.0))
       '@zenbujs/core':
-        specifier: ^0.0.3
-        version: 0.0.3(@types/node@22.19.18)(electron@42.0.1)(jiti@2.7.0)(react@19.2.6)
+        specifier: ^0.0.8
+        version: 0.0.8(@types/node@22.19.18)(electron@42.0.1)(jiti@2.7.0)(react@19.2.6)
       react:
         specifier: ^19.0.0
         version: 19.2.6
@@ -831,8 +831,8 @@ packages:
     resolution: {integrity: sha512-A9gOqLdi6cV4ibazAjcQufGj0B1y/vDqYrcuP6d/6x8P27gRS8643Dj9o1dEKtB6O7fwxb2FgBmJS2mX7gpvdw==}
     engines: {node: '>=14.6'}
 
-  '@zenbujs/core@0.0.3':
-    resolution: {integrity: sha512-5jYs5m/ZBYx0H/z6ihSiF+qXPFq9xEsMkysUlsMpvmHxhXc1ictG2zucKEdSphdsGg2xJ+hcJTmr3Cst9dSd9w==}
+  '@zenbujs/core@0.0.8':
+    resolution: {integrity: sha512-ixjHYwd1geAf+AdAnVO6PUGQHGQN0ktiB09X0342IYVX5bYkmdGvDsqxgSmxvM38kI06YOPIb1C3Yz6xS/5g3A==}
     hasBin: true
     peerDependencies:
       electron: ^42.0.0
@@ -841,8 +841,8 @@ packages:
       react:
         optional: true
 
-  '@zenbujs/hmr@0.0.1':
-    resolution: {integrity: sha512-17QM/kV6aIfwFNyuwW7zvGPyWMzWrDE9GIG9Md7+sKwLypgYmegtBngCISiLOQKfj6EPGvOvvS9dYyHpDisjVw==}
+  '@zenbujs/hmr@0.0.2':
+    resolution: {integrity: sha512-3ZFmbemNY8kLuSoR5qoRPo+o4OaCf3ei6+cHffAA3wmwELWXyi9Yc8g8oeZy6CxJtD5nD6yu9Pizo/TDM4jhUg==}
 
   abbrev@4.0.0:
     resolution: {integrity: sha512-a1wflyaL0tHtJSmLSOVybYhy22vRih4eduhhrkcjgrWGnRfrZtovJ2FRjxuTtkkj47O/baf0R86QU5OuYpz8fA==}
@@ -2902,17 +2902,18 @@ snapshots:
   '@xmldom/xmldom@0.9.10':
     optional: true
 
-  '@zenbujs/core@0.0.3(@types/node@22.19.18)(electron@42.0.1)(jiti@2.7.0)(react@19.2.6)':
+  '@zenbujs/core@0.0.8(@types/node@22.19.18)(electron@42.0.1)(jiti@2.7.0)(react@19.2.6)':
     dependencies:
       '@parcel/watcher': 2.5.6
       '@vitejs/plugin-react': 5.2.0(vite@6.4.2(@types/node@22.19.18)(jiti@2.7.0)(tsx@4.21.0))
-      '@zenbujs/hmr': 0.0.1
+      '@zenbujs/hmr': 0.0.2
       dugite: 3.2.2
       effect: 3.21.2
       electron: 42.0.1
       electron-context-menu: 4.1.2
       isomorphic-git: 1.37.6
       nanoid: 5.1.11
+      semver: 7.8.0
       tsx: 4.21.0
       vite: 6.4.2(@types/node@22.19.18)(jiti@2.7.0)(tsx@4.21.0)
       ws: 8.20.0
@@ -2937,7 +2938,7 @@ snapshots:
       - utf-8-validate
       - yaml
 
-  '@zenbujs/hmr@0.0.1':
+  '@zenbujs/hmr@0.0.2':
     dependencies:
       '@babel/core': 7.29.0
       '@babel/generator': 7.29.1
@@ -3681,7 +3682,7 @@ snapshots:
       es6-error: 4.1.1
       matcher: 3.0.0
       roarr: 2.15.4
-      semver: 7.7.4
+      semver: 7.8.0
       serialize-error: 7.0.1
     optional: true
 
@@ -3927,7 +3928,7 @@ snapshots:
 
   node-abi@4.31.0:
     dependencies:
-      semver: 7.7.4
+      semver: 7.8.0
 
   node-addon-api@1.7.2:
     optional: true
@@ -3936,7 +3937,7 @@ snapshots:
 
   node-api-version@0.2.1:
     dependencies:
-      semver: 7.7.4
+      semver: 7.8.0
 
   node-gyp@12.3.0:
     dependencies:
@@ -3945,7 +3946,7 @@ snapshots:
       graceful-fs: 4.2.11
       nopt: 9.0.0
       proc-log: 6.1.0
-      semver: 7.7.4
+      semver: 7.8.0
       tar: 7.5.15
       tinyglobby: 0.2.16
       undici: 6.25.0

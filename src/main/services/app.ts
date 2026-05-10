@@ -1,14 +1,15 @@
-import { runtime, serviceWithDeps } from "@zenbujs/core/runtime"
-import { WindowService } from "@zenbujs/core/services"
+import { runtime, Service } from "@zenbujs/core/runtime";
+import { WindowService } from "@zenbujs/core/services";
 
-export class AppService extends serviceWithDeps({
-  window: WindowService,
+export class AppService extends Service.create({
+  key: "app",
+  deps: {
+    window: WindowService,
+  },
 }) {
-  static key = "app"
-
   async evaluate() {
-    await this.ctx.window.openView({ scope: "app" })
+    await this.ctx.window.openView({ type: "app" });
   }
 }
 
-runtime.register(AppService, import.meta)
+runtime.register(AppService, import.meta);
