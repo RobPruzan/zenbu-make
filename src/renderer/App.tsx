@@ -28,7 +28,7 @@ function Home() {
         color: "var(--foreground, #e5e5e5)",
       }}
     >
-      <h1>Welcome to Zenbu Make</h1>
+      <h1>Welcome to Zenbu Make update pls</h1>
     </main>
   );
 }
