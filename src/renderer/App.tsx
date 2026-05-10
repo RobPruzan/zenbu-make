@@ -1,5 +1,6 @@
-import { ZenbuProvider } from "@zenbujs/core/react";
+import { useRpc, ZenbuProvider } from "@zenbujs/core/react";
 import { UpdateStatus } from "./UpdateStatus";
+import { useEffect, useState } from "react";
 
 function Titlebar() {
   return (
@@ -19,6 +20,13 @@ function Titlebar() {
 }
 
 function Home() {
+  const rpc = useRpc();
+  const [cwd, setCwd] = useState("not yet");
+  useEffect(() => {
+    rpc.app.getCwd().then((cwd) => {
+      setCwd(cwd);
+    });
+  }, []);
   return (
     <main
       style={{
@@ -28,6 +36,7 @@ function Home() {
         color: "var(--foreground, #e5e5e5)",
       }}
     >
+      {cwd}
       <h1>Welcome to Zenbu Make update pls</h1>
     </main>
   );

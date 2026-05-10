@@ -10,6 +10,10 @@ export class AppService extends Service.create({
   async evaluate() {
     await this.ctx.window.openView({ type: "app" });
   }
+
+  async getCwd() {
+    return process.cwd() + "poop";
+  }
 }
 
 runtime.register(AppService, import.meta);
